@@ -2,7 +2,9 @@ package codes.edrich.locationsaver.model
 
 data class Location(
     val id: Long,
-    val name: String,
-    val w3w: String,
-    val coords: Coordinates
+    var identifier: String,
+    var description: String,
+    var w3w: String,
+    var lng: Double,
+    var lat: Double
 )
