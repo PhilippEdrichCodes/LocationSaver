@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "961300070066",
+    "project_id": "locationsaver-9062f",
+    "storage_bucket": "locationsaver-9062f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961300070066:android:83c54696733ad16ae253ab",
+        "android_client_info": {
+          "package_name": "codes.edrich.locationsaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961300070066-dqj3k9ndc78p2fhvgadbkg2ffrrmlhqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "codes.edrich.locationsaver",
+            "certificate_hash": "4f000d9e13017f50b15e75668d9e26de39424a7f"
+          }
+        },
+        {
+          "client_id": "961300070066-tc9dmf5t4smrkditvc84758j734s5i3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd-ir7pEixpyxgupsGkKE_m22lUO6B21A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961300070066-tc9dmf5t4smrkditvc84758j734s5i3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

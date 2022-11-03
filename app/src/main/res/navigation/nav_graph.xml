@@ -9,10 +9,29 @@
         android:id="@+id/mainFragment"
         android:name="codes.edrich.locationsaver.view.MainFragment"
         android:label="MainFragment"
-        tools:layout="@layout/fragment_main"/>
+        tools:layout="@layout/fragment_main" />
     <activity
         android:id="@+id/mainActivity"
         android:name="codes.edrich.locationsaver.MainActivity"
         android:label="MainActivity"
-        tools:layout="@layout/activity_main"/>
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="codes.edrich.locationsaver.view.ui.auth.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationDetailFragment"
+        android:name="codes.edrich.locationsaver.view.ui.locations.LocationDetailFragment"
+        android:label="LocationDetailFragment"
+        tools:layout="@layout/fragment_location_detail" />
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="codes.edrich.locationsaver.view.ui.auth.SignupFragment"
+        android:label="SignupFragment"
+        tools:layout="@layout/fragment_signup" />
 </navigation>

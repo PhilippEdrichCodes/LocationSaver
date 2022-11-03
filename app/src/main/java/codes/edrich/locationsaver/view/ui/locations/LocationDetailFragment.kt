@@ -1,4 +1,4 @@
-package codes.edrich.locationsaver.view
+package codes.edrich.locationsaver.view.ui.locations
 
 import android.os.Bundle
 import android.view.LayoutInflater
