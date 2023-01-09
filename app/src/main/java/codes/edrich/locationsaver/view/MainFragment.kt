@@ -1,16 +1,17 @@
 package codes.edrich.locationsaver.view
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.constraintlayout.helper.widget.Carousel.Adapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import codes.edrich.locationsaver.R
 import codes.edrich.locationsaver.databinding.FragmentMainBinding
+import codes.edrich.locationsaver.model.Location
 import codes.edrich.locationsaver.view.adapter.LocationAdapter
 import codes.edrich.locationsaver.viewmodel.MainViewModel
 
@@ -35,7 +36,7 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val recycler = mainFragmentBinding.mainLocationRecycler
-        recycler.adapter = LocationAdapter(listOf())
+        recycler.adapter = LocationAdapter(listOf<Location>())//viewModel.locations)
 
         recycler.setHasFixedSize(true)
 
@@ -47,6 +48,10 @@ class MainFragment : Fragment() {
                 }
             }
         )
+
+        mainFragmentBinding.mainLogoutFab.setOnClickListener {
+            viewModel.logout()
+        }
     }
 
 }

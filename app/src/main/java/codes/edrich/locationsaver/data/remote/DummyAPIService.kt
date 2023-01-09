@@ -22,7 +22,7 @@ private val retrofit = Retrofit.Builder()
 
 interface DummyAPIService {
     @GET("data")
-    suspend fun getLocation() : List<Location>
+    suspend fun getLocations() : List<Location>
 }
 
 object DummyAPI {
